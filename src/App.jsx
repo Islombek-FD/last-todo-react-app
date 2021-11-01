@@ -116,23 +116,21 @@ function App() {
 				</ul>
 
 				<div className='btn__group'>
-					<button className='btn__all' onClick={allBtn}>
+					<button className='todo__count-btn' onClick={allBtn}>
 						All
-						<strong className='all__todo-count'>
+						<strong className='todo__count'>
 							{localTodos.length}
 						</strong>
 					</button>
-					<button className='btn__completed' onClick={completeBtn}>
+					<button className='todo__count-btn' onClick={completeBtn}>
 						Completed
-						<strong className='completed__todo-count'>
-							{completed}
-						</strong>
+						<strong className='todo__count'>{completed}</strong>
 					</button>
 					<button
-						className='btn_uncompleted'
+						className='todo__count-btn'
 						onClick={uncompletedBtn}>
 						Uncompleted
-						<strong className='uncompleted__todo-count'>
+						<strong className='todo__count'>
 							{localTodos.length - completed}
 						</strong>
 					</button>
